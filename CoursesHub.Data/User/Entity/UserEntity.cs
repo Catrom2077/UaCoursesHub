@@ -19,6 +19,8 @@ namespace CoursesHub.Data.User.Entity
 
         public string Email { get; set; } = string.Empty;
 
+        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
+
         public override string ToString() =>
             $"id({Id}) {Name} {LastName}";
     }
